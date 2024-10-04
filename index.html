@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de convite</title>
+    <link rel="stylesheet" href="styles.css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <aside>
+            <div class="title">
+                <img src="assets/images/Logo.svg" alt="icone confete">
+                <header>
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </header>
+            </div>
+        </aside>
+        <main>
+            <div class="main-container">
+                <h2>Crie seu convite</h2>
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="sobre">
+                        <div class="legends">
+                            <img src="assets/icons/calendar.svg" alt="ícone calendario">
+                            <legend>Sobre o evento</legend>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="titulo">Título</label>
+                            <input 
+                                    id="titulo" 
+                                    name="titulo" 
+                                    placeholder="Nome do evento"    
+                                    type="text">
+                        </div>
+                        <div class="flex">
+                            <div class="input-wrapper">
+                                <label for="inicio">Início</label>
+                                <input 
+                                    id="inicio" 
+                                    name="inicio"
+                                    placeholder="DD/MM/AAAA, --:--"
+                                    type="date">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="fim">Fim</label>
+                                <input 
+                                    id="fim" 
+                                    name="fim"
+                                    type="date">
+                            </div>                           
+                        </div>
+                        <div class="flex">
+                            <div class="input-wrapper">
+                                <label>Tipo</label>
+                                <div class="toggle-switch">
+                                    <div class="toggle-inner">
+                                        <div class="toggle-image"></div>
+                                        <input id="presencial" name="tipo-de-evento" type="radio" value="presencial">
+                                        <label for="presencial">Presencial</label>
+                                    </div>
+                                    <div class="toggle-inner">
+                                        <div class="toggle-image"></div>
+                                        <input id="Online" name="tipo-de-evento" type="radio" value="online">
+                                        <label for="Online">Online</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="local">Local</label>
+                                <input 
+                                    id="local" 
+                                    name="local"
+                                    placeholder="Link ou endereço" 
+                                    type="text">
+                            </div>
+                        </div>
+                        <div class="text-wrapper">
+                            <label for="descrição">Descrição</label>
+                            <textarea 
+                                name="descrição" 
+                                id="descrição"
+                                placeholder="Escreva sobre os detalhes do evento"
+                                cols="30"
+                                rows="5"
+                                >
+                            </textarea>
+                        </div> 
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div> 
+</body>
+</html>

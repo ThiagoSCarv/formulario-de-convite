@@ -1,0 +1,47 @@
+#app {
+    display:flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--shape-background);
+    aside {
+        border-radius: .75rem;
+        width: 30rem;
+        background-image: url(../assets/images/Background.png);
+        background-size: cover;
+        & .title {
+            margin: 2rem;
+            img {
+                width: 2.86rem;
+                height: 3rem;
+                object-fit: cover;
+                margin-bottom: 1rem;
+            }
+            h1 {
+                font: var(--logo);
+                color: var(--pink);
+                margin-bottom: .25rem;
+            }
+            p {
+                font: var(--body-md);
+                font-weight: 300;
+                color: var(--text-heading);
+            }
+
+        }
+    }
+    main {
+        overflow: auto;
+        width: 51.25rem;
+        .main-container {
+            width: 35rem;
+            margin-inline: 8.125rem;
+            margin-top: 5rem;
+            h2 {
+                font: var(--heading-md);
+                color: var(--text-heading);
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+

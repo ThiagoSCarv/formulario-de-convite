@@ -1,0 +1,43 @@
+input,
+textarea {
+    appearance: none;
+    border: 1px solid var(--input-stroke);
+    border-radius: .5rem;
+    padding-block: 0.8125rem;
+    background-color: var(--input-base);
+    font: var(--body-md);
+    color: var(--text-heading);
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid var(--brand-light);
+}
+
+input[type="date" i] {
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+    
+}
+
+.input-wrapper {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+
+label {
+    font: var(--body-md);
+    font-weight: 400;
+    font-size: .875rem;
+    color: var(--text-body);
+    margin-bottom: .75rem;
+}
+
