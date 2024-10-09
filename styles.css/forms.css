@@ -2,10 +2,15 @@ fieldset {
     border: none;
     display: flex;
     flex-flow: column;
+    margin-bottom: 3rem;
+}
+
+.sobre {
     gap: 1rem;
-    & #sobre {
-        margin-bottom: .5rem;
-    }
+}
+
+.personalização {
+    gap: 1.5rem;
 }
 
 .legends {
@@ -21,8 +26,3 @@ fieldset {
     }
 }
 
-fieldset + fieldset {
-    display: flex;
-    flex-flow: column;
-    gap: 3rem;
-}
