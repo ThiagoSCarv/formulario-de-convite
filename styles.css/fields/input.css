@@ -10,14 +10,21 @@ textarea {
     padding-left: 1rem;
 }
 
+input[type="datetime-local"] {
+    text-transform: uppercase;
+}
+
 input:focus,
 textarea:focus,
-input[type="date"]:focus-within {
+input[type="datetime-local"]:focus-within {
     outline: none;
     border: .125rem solid var(--brand-light);
     outline-offset: .1px;
 }
 
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
 
 .input-wrapper {
     display: flex;
@@ -36,4 +43,37 @@ label {
     font-size: .875rem;
     color: var(--text-body);
     margin-bottom: .75rem;
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    textarea {
+        appearance: none;
+    }
+}
+
+input,
+textarea {
+    
+    &:invalid {
+        border: 1px solid var(--danger);
+    }
+
+    &[required]+.error {
+        margin-top: .5rem;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        span {
+            font-family: var(--font-opensans);
+            color: var(--danger);
+            font-weight: 400;
+            font-size: .75rem;
+        }
+    }
+
+    &:not(:focus):valid+.error {
+        display: none;
+    }
 }
