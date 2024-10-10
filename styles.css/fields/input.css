@@ -37,6 +37,14 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
     gap: 1rem;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
 label {
     font: var(--body-md);
     font-weight: 400;

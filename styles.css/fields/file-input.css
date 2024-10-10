@@ -1,0 +1,40 @@
+.file-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    input[type="file"] {
+        appearance: none;
+        all: unset;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        font: var(--body-md);
+        color: var(--input-placeholder);
+    }
+    input::file-selector-button {
+        opacity: 0;
+    }
+    .button-upload {
+        background-color: var(--shape-button);
+        border-radius: .5rem;
+        width: 7.4375rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        img {
+            object-fit: cover;
+            width: 1rem;
+            height: 1rem;
+        }
+        label {
+            font-family: var(--font-opensans);
+            font-weight: 400;
+            font-size: .875;
+            color: var(--text-heading);
+            align-self: flex-end;
+        }
+    }
+}
