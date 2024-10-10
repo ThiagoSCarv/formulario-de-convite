@@ -7,6 +7,9 @@ fieldset {
 
 .sobre {
     gap: 1rem;
+    .legends {
+        margin-bottom: .5rem;
+    }
 }
 
 .personalização {
@@ -26,3 +29,9 @@ fieldset {
     }
 }
 
+.contato {
+    gap: 1rem;
+    .legends {
+        margin-bottom: .5rem;
+    }
+}

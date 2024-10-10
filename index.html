@@ -99,7 +99,7 @@
                             </textarea>
                             <div class="error">
                                 <img src="assets/icons/circle-alert red.svg" alt="">
-                                <span>Error message</span>
+                                <span>Campo obrigatório</span>
                             </div>
                         </div> 
                     </fieldset>
@@ -341,6 +341,49 @@
                                         <label for="upload">Selecionar</label>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="contato">
+                        <div class="legends">
+                            <img src="assets/icons/contact.svg" alt="icone contato">
+                            <legend>Dados para contato</legend>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                            <div class="error">
+                                <img src="assets/icons/circle-alert red.svg" alt="">
+                                <span>Campo obrigatório</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="input-wrapper">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" name="Telefone" id="Telefone" placeholder="(99) 99999-9999 ">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="terms">
+                        <div class="input-wrapper">
+                            <div class="terms-wrapper flex">
+                                <div class="checkbox-image"></div>
+                                <input type="checkbox" name="termos" id="termos">
+                                <label for="termos">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+                            </div>
+                            <div class="terms-wrapper flex">
+                                <div class="checkbox-image">
+                                <input type="checkbox" name="atuali-email" id="atuali-email">
+                                <label for="atuali-email">Aceito receber atualizações e promoções por e-mail</label>
+                            </div>
+                            <div class="terms-wrapper flex">
+                                <div class="checkbox-image">
+                                    <input type="checkbox" name="atuali-sms" id="atuali-sms">
+                                    <label for="atuali-sms">Aceito receber atualizações e promoções por SMS</label>
                             </div>
                         </div>
                     </fieldset>

@@ -10,7 +10,7 @@
   }
 }
 
-input[type="checkbox"] {
+.switch {
   appearance: none;
   width: 4rem;
   height: 2rem;
@@ -22,7 +22,7 @@ input[type="checkbox"] {
   transition: .3s;
 }
 
-input[type="checkbox"]::before {
+.switch::before {
   content: "";
   position: absolute;
   width: 1.5rem;
@@ -34,7 +34,7 @@ input[type="checkbox"]::before {
   transition: .3s;
 }
 
-input[type="checkbox"]::after {
+.switch::after {
   content: "Escuro";
   position: absolute;
   font-family: var(--font-opensans);
@@ -46,16 +46,16 @@ input[type="checkbox"]::after {
   transition: .3s;
 }
 
-input[type="checkbox"]:checked {
+.switch:checked {
   background-color: var(--brand-light);
 }
 
-input[type="checkbox"]:checked::before {
+.switch:checked::before {
   position: absolute;
   background-color: var(--text-heading);
   left: 36px;
 }
 
-input[type="checkbox"]:checked::after {
+.switch:checked::after {
   content: "Claro";
 }
