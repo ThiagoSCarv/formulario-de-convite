@@ -1,0 +1,25 @@
+.action-button {
+    display: flex;
+    justify-content: end;
+    .btn{
+        width: 11.06rem;
+        height: 3rem;
+        position: relative;
+        border-radius: .5rem;
+        background-color: var(--brand-dark);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .75rem;
+        & button {
+            position: absolute;
+            opacity: 0;
+            inset: 0;
+        }
+        & label {
+            font: var(--body-md);
+            color: var(--text-heading);
+            margin: 0;
+        }
+    }
+}
