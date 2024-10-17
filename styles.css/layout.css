@@ -1,12 +1,11 @@
 #app {
-    display:flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 32.78% 67.22%;
     height: 100vh;
     background-color: var(--shape-background);
     aside {
         border-radius: .75rem;
-        width: 30rem;
-        background-image: url(../assets/images/Background.png);
+        background: url(../assets/images/Background.png) no-repeat center/contain;
         background-size: cover;
         & .title {
             margin: 2rem;
@@ -31,7 +30,6 @@
     }
     main {
         overflow: auto;
-        width: 51.25rem;
         .main-container {
             width: 35rem;
             margin-inline: 8.125rem;
