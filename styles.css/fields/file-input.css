@@ -38,3 +38,8 @@
         }
     }
 }
+.file-input:hover {
+    .button-upload {
+        background-color: var(--shape-hover);
+    }
+}
